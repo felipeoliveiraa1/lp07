@@ -3,7 +3,7 @@
 // = play-rate real). Sem facade/poster estático. O gate da página lê o tempo real do
 // vídeo (window.smartplayer.instances[i].instance.currentTime) pra revelar o CTA.
 // o id do ELEMENTO tem prefixo "vid-", mas a URL do player.js usa o id PURO.
-const { playerId, account = 'c7c1994f-acfe-4862-a800-81af24e8e9fe' } = Astro.props;
+const { playerId, account = 'd9544c5d-ba21-4c7b-aa65-b6663bf5494d' } = Astro.props;
 const bareId = playerId.replace(/^vid-/, '');
 const playerScript = `https://scripts.converteai.net/${account}/players/${bareId}/v4/player.js`;
 ---
